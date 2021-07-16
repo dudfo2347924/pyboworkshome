@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, unutual-scale=1">
+    <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Hello~Pybo</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+<!--기본 탬플릿 안에 삽입될 내용 start-->
+{% block content %}
+
+
+{% endblock %}
+<!--기본 탬플릿 안에 삽입될 내용 end-->
+<script src="{% static 'jquery-3.6.0.js' %}"></script>
+<script src="{% static 'bootstrap.js' %}"></script>
+
+
+</body>
+</html>
